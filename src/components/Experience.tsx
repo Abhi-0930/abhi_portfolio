@@ -13,45 +13,52 @@ interface TimelineEvent {
 const experiences: TimelineEvent[] = [
   {
     role: "Founder",
-    company: "Preppath · Remote",
+    company: "PrepPath",
     period: "SEP 2026 — PRESENT",
-    description: "Building an engineering learning platform helping students develop practical skills and industry-ready expertise through structured project-based curriculums, technical mentorship, hands-on workshops, and collaborative community initiatives.",
-    pills: ["EdTech", "System Architecture", "Curriculum Design", "Mentorship", "Community Building"],
+    description: "Building an industry-focused technical education and engineering readiness platform designed to bridge the gap between academic theory and production-grade software engineering through structured DSA, Full-Stack, DBMS, and System Design roadmaps, technical handbooks, and cohort mentorship.",
+    pills: ["Product Architecture", "Next.js", "TypeScript", "System Design (HLD/LLD)", "DSA & Algorithms", "Technical Curriculum", "EdTech"],
   },
   {
-    role: "Founder & Principal Engineer",
-    company: "CodeLoom · Hybrid (Hyderabad, India)",
+    role: "Founder & Full-Stack System Architect",
+    company: "CodeLoom",
     period: "FEB 2024 — PRESENT",
-    description: "Leading end-to-end product development for startups and businesses from concept to production. Architecting scalable, secure web, mobile, and automation solutions with a relentless focus on performance, reliability, and system design.",
-    pills: ["Next.js", "Node.js", "PostgreSQL", "System Architecture", "DevSecOps", "AWS", "Automation", "Code Review"],
+    description: "Partnering with startups and enterprises to transform real-world problems into scalable web, mobile, AI, and automation products—leading end-to-end engineering from HLD/LLD system architecture and database design to Kubernetes orchestration, DevSecOps hardening, and observability.",
+    pills: ["Next.js", "TypeScript", "Node.js", "PostgreSQL", "Redis", "Docker", "Kubernetes", "AWS", "System Design", "AI Agents / MCP"],
   },
   {
-    role: "Technical Trainer & Mentor",
-    company: "Freelance · Remote",
+    role: "Founder & Lead Full-Stack Architect",
+    company: "Arihstour",
+    period: "OCT 2023 — JUL 2024",
+    description: "Founded and operated a travel metasearch startup unifying real-time flight, hotel, and bus inventory across 7+ global partner APIs (Skyscanner, Booking.com, MakeMyTrip, Air India, AirAsia, Aviasales, Trip.com), complete with CTR/conversion attribution pipelines, an admin analytics portal, and automated Razorpay payouts.",
+    pills: ["Next.js", "React.js", "Node.js", "Express.js", "PostgreSQL", "Redis", "Razorpay", "API Aggregation", "System Design"],
+  },
+  {
+    role: "Technical Trainer & Placement Mentor",
+    company: "Freelance (Global)",
     period: "FEB 2023 — PRESENT",
-    description: "Trained and mentored 5,000+ students and aspiring engineers across the US, UK, India, and Europe through intensive workshops and bootcamps in Data Structures & Algorithms, Full-Stack Development, DBMS, and System Design.",
-    pills: ["Data Structures & Algorithms", "System Design", "MERN Stack", "DBMS", "Technical Interview Prep", "Mentoring"],
+    description: "Trained and mentored 5,000+ students and engineers across the US, UK, India, Netherlands, Italy, and Germany through online and offline bootcamps, university workshops, and placement mentorship covering DSA, Algorithms, MERN/Next.js, App Development, DBMS, and System Design (HLD/LLD).",
+    pills: ["5,000+ Students Mentored", "DSA & Algorithms", "Full-Stack (MERN/Next.js)", "System Design", "DBMS", "App Development", "Technical Training"],
   },
   {
     role: "Project Mentor & Open Source Contributor",
-    company: "GirlScript Summer of Code (GSSoC) · Remote",
+    company: "GirlScript Summer of Code (GSSoC)",
     period: "JUN 2022 — MAR 2023",
-    description: "Mentored contributors on Git workflows, pull requests, and software engineering best practices. Actively contributed to open-source codebases spanning web development, cybersecurity, AI, and RESTful APIs with distributed teams.",
-    pills: ["Open Source", "Code Review", "Git & GitHub", "REST APIs", "Cybersecurity", "Mentorship"],
-  },
-  {
-    role: "Design Team Lead",
-    company: "Coding Cubs · On-site",
-    period: "AUG 2020 — JAN 2022",
-    description: "Promoted from Team Member to Team Lead. Directed cross-functional workflows, coordinated multidisciplinary project deliverables, and mentored members to deliver polished technical and creative solutions.",
-    pills: ["Team Leadership", "UI/UX Design", "Project Management", "Mentorship", "Workflow Optimization"],
+    description: "Contributed to and mentored open-source projects across cybersecurity, AI, e-commerce, and full-stack web domains—conducting pull-request code reviews, guiding distributed contributors on Git workflows, and shipping production-ready features and REST API optimizations.",
+    pills: ["Open Source", "Code Review", "Full-Stack Development", "System Design", "Cybersecurity", "REST APIs", "Git"],
   },
   {
     role: "Web Developer Intern",
-    company: "Prodigy InfoTech · Remote",
+    company: "Prodigy InfoTech",
     period: "SEP 2021 — OCT 2021",
-    description: "Engineered responsive, accessible web interfaces and reusable UI components following industry-standard frontend practices, optimizing cross-device compatibility and page load performance.",
-    pills: ["Frontend Development", "JavaScript", "Responsive Design", "HTML5 & CSS3", "Component Design"],
+    description: "Engineered responsive, accessible frontend interfaces and reusable UI components using modern web standards, focusing on cross-device performance, clean component architecture, and Git-based collaborative workflows.",
+    pills: ["Frontend Engineering", "JavaScript", "HTML5 & CSS3", "Responsive UI", "Git"],
+  },
+  {
+    role: "Design Team Lead & Member",
+    company: "Coding Cubs",
+    period: "AUG 2020 — JAN 2022",
+    description: "Promoted from Design Team Member to Team Lead based on technical ownership and delivery—leading cross-functional project execution, mentoring team members, and managing end-to-end delivery timelines.",
+    pills: ["Technical Leadership", "Project Management", "Team Mentorship", "UI/UX Systems"],
   },
 ];
 
@@ -62,12 +69,12 @@ export default function Experience() {
       <div className="mx-auto max-w-6xl px-6">
         {/* Header Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 mb-20">
-          <div className="lg:col-span-6 flex flex-col items-start">
+          <div className="lg:col-span-8 flex flex-col items-start">
             <span className="text-[10px] uppercase tracking-[0.2em] text-zinc-400 dark:text-zinc-500 font-bold font-mono mb-4">
               03 — EXPERIENCE
             </span>
             <h2 className="text-3xl md:text-[40px] font-extrabold tracking-tight text-zinc-900 dark:text-zinc-50 leading-[1.2]">
-              A timeline of building products, solving problems, and creating impact through software engineering.
+              A timeline of architecting production systems, launching startup ventures, and mentoring 5,000+ engineers globally.
             </h2>
           </div>
         </div>
