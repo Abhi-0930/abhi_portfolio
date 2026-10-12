@@ -142,31 +142,34 @@ export const projects: Project[] = [
     ),
   },
   {
-    id: "bitebuzz",
-    title: "BiteBuzz",
+    id: "arihs-tour",
+    title: "Arihs Tour",
     image: "/malnadu_kitchen .png",
-    subtitle: "Food Ordering & Operations Platform",
-    description: "A full-stack food ordering and restaurant management platform featuring dedicated customer storefronts and an administrative operations console. Enables users to browse menus and place authenticated orders directly, while empowering admins to manage food catalogs, control live inventory stock, edit pricing, and update real-time order statuses from processing to delivery.",
+    subtitle: "Multi-Provider Travel Aggregation Engine",
+    description: "A travel metasearch and aggregation platform engineered to unify real-time flight, hotel, and bus inventory across global providers like Skyscanner, Booking.com, and MakeMyTrip. The system features multi-provider API normalization, outbound affiliate conversion tracking, automated Razorpay payouts, and an administrative telemetry dashboard for user and booking metrics.",
     tech: [
+      "Next.js",
       "React.js",
       "Node.js",
       "Express.js",
-      "MongoDB",
-      "JWT",
-      "REST APIs",
-      "TailwindCSS",
-      "Redux",
+      "PostgreSQL",
+      "Redis",
+      "Docker",
+      "AWS",
       "Razorpay",
-      "System Design"
+      "TailwindCSS",
+      "REST APIs",
+      "System Design",
+      "HLD/LLD"
     ],
-    liveLink: "https://demo.codeloom.in/bitebuzz",
-    gitLink: "https://github.com/Abhi-0930/bite-buzz.git",
-    category: "Full-Stack Development • E-Commerce • MERN Stack",
+    liveLink: "https://demo.codeloom.in/arihs-tour",
+    gitLink: "https://github.com/Abhi-0930/arihs-tour.git",
+    category: "TravelTech • Metasearch Aggregator • Real-Time Systems",
     highlights: [
-      "Engineered 2 dedicated control dashboards with real-time operational metrics.",
-      "Delivered 15+ functional application components spanning checkout to admin inventory control.",
-      "Created and load-tested secure REST API endpoints with JWT authentication.",
-      "Built real-time order tracking and dynamic menu management workflows."
+      "Engineered a unified travel metasearch engine integrating Skyscanner, Booking.com, and MakeMyTrip.",
+      "Normalized diverse multi-provider API response schemas into a high-performance unified data format.",
+      "Built outbound affiliate redirect tracking and automated payout settlement via Razorpay.",
+      "Developed an administrative telemetry dashboard for real-time booking trends and operational analytics."
     ],
     illustration: (
       <div className="absolute inset-0 bg-gradient-to-b from-[#232526] to-[#414345] overflow-hidden flex items-center justify-center">
