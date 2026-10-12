@@ -42,23 +42,23 @@ const experiences: TimelineEvent[] = [
   {
     role: "Project Mentor & Open Source Contributor",
     company: "GirlScript Summer of Code (GSSoC)",
-    period: "JUN 2022 — MAR 2023",
+    period: "JUL 2023 — JAN 2024",
     description: "Contributed to and mentored open-source projects across cybersecurity, AI, e-commerce, and full-stack web domains—conducting pull-request code reviews, guiding distributed contributors on Git workflows, and shipping production-ready features and REST API optimizations.",
     pills: ["Open Source", "Code Review", "Full-Stack Development", "System Design", "Cybersecurity", "REST APIs", "Git"],
   },
   {
-    role: "Web Developer Intern",
-    company: "Prodigy InfoTech",
-    period: "SEP 2021 — OCT 2021",
-    description: "Engineered responsive, accessible frontend interfaces and reusable UI components using modern web standards, focusing on cross-device performance, clean component architecture, and Git-based collaborative workflows.",
-    pills: ["Frontend Engineering", "JavaScript", "HTML5 & CSS3", "Responsive UI", "Git"],
-  },
-  {
     role: "Design Team Lead & Member",
     company: "Coding Cubs",
-    period: "AUG 2020 — JAN 2022",
+    period: "AUG 2022 — JUL 2023",
     description: "Promoted from Design Team Member to Team Lead based on technical ownership and delivery—leading cross-functional project execution, mentoring team members, and managing end-to-end delivery timelines.",
     pills: ["Technical Leadership", "Project Management", "Team Mentorship", "UI/UX Systems"],
+  },
+  {
+    role: "Web Developer Intern",
+    company: "Prodigy InfoTech",
+    period: "SEP 2022 — OCT 2022",
+    description: "Engineered responsive, accessible frontend interfaces and reusable UI components using modern web standards, focusing on cross-device performance, clean component architecture, and Git-based collaborative workflows.",
+    pills: ["Frontend Engineering", "JavaScript", "HTML5 & CSS3", "Responsive UI", "Git"],
   },
 ];
 
