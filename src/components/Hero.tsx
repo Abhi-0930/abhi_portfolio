@@ -26,26 +26,11 @@ export default function Hero() {
       <div className="mx-auto max-w-7xl w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center z-10 relative">
         {/* Left Column: Text Content */}
         <div className="lg:col-span-7 flex flex-col items-start text-left">
-          {/* Top Status Badge */}
-          <motionFramer.div
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="mb-6 inline-flex flex-wrap items-center gap-2 rounded-full border border-zinc-200/80 dark:border-zinc-800/80 bg-zinc-50/70 dark:bg-zinc-900/60 px-3.5 py-1.5 text-[11px] sm:text-xs font-mono font-medium text-zinc-600 dark:text-zinc-400 shadow-sm backdrop-blur-sm"
-          >
-            <span className="inline-block h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
-            <span className="font-semibold text-emerald-600 dark:text-emerald-400">[SYS_ONLINE]</span>
-            <span className="text-zinc-300 dark:text-zinc-700">·</span>
-            <span>2026 Graduate</span>
-            <span className="text-zinc-300 dark:text-zinc-700">·</span>
-            <span>System Architecture, Startups & Technical Training</span>
-          </motionFramer.div>
-
           {/* Title Group */}
           <motionFramer.div
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.1 }}
+            transition={{ duration: 0.6 }}
             className="w-full"
           >
             <h1 className="text-5xl md:text-7xl lg:text-[76px] font-extrabold tracking-tight text-zinc-900 dark:text-zinc-50 leading-[1.1]">
