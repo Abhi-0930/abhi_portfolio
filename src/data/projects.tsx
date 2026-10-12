@@ -225,7 +225,7 @@ export const projects: Project[] = [
       "JWT",
       "System Design"
     ],
-    liveLink: "https://demo.codeloom.in/empathy-ai",
+    liveLink: "https://empathyai.in",
     gitLink: "https://github.com/Abhi-0930/empathy-ai.git",
     category: "AI • Healthcare • Multimodal Systems",
     highlights: [
