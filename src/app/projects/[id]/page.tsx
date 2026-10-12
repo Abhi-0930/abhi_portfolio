@@ -53,9 +53,16 @@ export default function ProjectPage(props: ProjectPageProps) {
           {/* Main info (Left Column) */}
           <div className="lg:col-span-8 space-y-8">
             <div>
-              <h1 className="text-3xl md:text-5xl font-extrabold text-zinc-950 dark:text-zinc-50 tracking-tight leading-none">
-                {project.title}
-              </h1>
+              <div className="flex items-center gap-3 flex-wrap">
+                <h1 className="text-3xl md:text-5xl font-extrabold text-zinc-950 dark:text-zinc-50 tracking-tight leading-none">
+                  {project.title}
+                </h1>
+                {project.date && (
+                  <span className="text-xs font-mono font-medium px-2.5 py-1 rounded-full border border-zinc-200/50 dark:border-zinc-800/50 bg-zinc-100/50 dark:bg-zinc-850/50 text-zinc-500 dark:text-zinc-400">
+                    {project.date}
+                  </span>
+                )}
+              </div>
               <span className="text-sm md:text-base font-serif italic text-zinc-400 dark:text-zinc-500 mt-3 block">
                 {project.subtitle}
               </span>
