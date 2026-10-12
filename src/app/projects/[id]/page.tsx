@@ -19,13 +19,13 @@ export default function ProjectPage(props: ProjectPageProps) {
   }
 
   return (
-    <main className="bg-grid relative min-h-screen py-16 px-6 bg-zinc-50/20">
+    <main className="bg-grid relative min-h-screen py-16 px-6 bg-zinc-50/20 dark:bg-zinc-950 transition-colors duration-300">
       <div className="mx-auto max-w-5xl relative z-10">
         {/* Back Link */}
         <div className="mb-8">
           <Link
             href="/projects"
-            className="group inline-flex items-center gap-2 text-xs font-bold text-zinc-500 hover:text-zinc-950 transition-colors"
+            className="group inline-flex items-center gap-2 text-xs font-bold text-zinc-500 hover:text-zinc-950 dark:text-zinc-400 dark:hover:text-zinc-100 transition-colors"
           >
             <ArrowLeft size={14} className="transition-transform group-hover:-translate-x-0.5" />
             <span>Back to portfolio</span>
@@ -33,7 +33,7 @@ export default function ProjectPage(props: ProjectPageProps) {
         </div>
 
         {/* Visual Banner */}
-        <div className="h-64 md:h-96 w-full relative overflow-hidden rounded-[32px] border border-zinc-200/50 shadow-md mb-12">
+        <div className="h-64 md:h-96 w-full relative overflow-hidden rounded-[32px] border border-zinc-200/50 dark:border-zinc-800/40 shadow-md mb-12">
           {project.image ? (
             <img
               src={project.image}
@@ -43,7 +43,7 @@ export default function ProjectPage(props: ProjectPageProps) {
           ) : (
             project.illustration
           )}
-          <span className="absolute bottom-6 left-8 text-[10px] font-bold tracking-wider bg-white/90 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-white/20 text-zinc-800 shadow-sm">
+          <span className="absolute bottom-6 left-8 text-[10px] font-bold tracking-wider bg-white/90 dark:bg-zinc-950/90 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-white/20 dark:border-zinc-800/40 text-zinc-800 dark:text-zinc-200 shadow-sm">
             {project.category}
           </span>
         </div>
@@ -53,31 +53,31 @@ export default function ProjectPage(props: ProjectPageProps) {
           {/* Main info (Left Column) */}
           <div className="lg:col-span-8 space-y-8">
             <div>
-              <h1 className="text-3xl md:text-5xl font-extrabold text-zinc-950 tracking-tight leading-none">
+              <h1 className="text-3xl md:text-5xl font-extrabold text-zinc-950 dark:text-zinc-50 tracking-tight leading-none">
                 {project.title}
               </h1>
-              <span className="text-sm md:text-base font-serif italic text-zinc-400 mt-3 block">
+              <span className="text-sm md:text-base font-serif italic text-zinc-400 dark:text-zinc-500 mt-3 block">
                 {project.subtitle}
               </span>
             </div>
 
             <div className="space-y-3">
-              <h4 className="text-[10px] font-bold font-mono tracking-wider text-zinc-400 uppercase">
+              <h4 className="text-[10px] font-bold font-mono tracking-wider text-zinc-400 dark:text-zinc-500 uppercase">
                 Project Overview
               </h4>
-              <p className="text-sm md:text-[15px] leading-relaxed text-zinc-650 font-medium">
+              <p className="text-sm md:text-[15px] leading-relaxed text-zinc-650 dark:text-zinc-300 font-medium">
                 {project.description}
               </p>
             </div>
 
             <div className="space-y-4">
-              <h4 className="text-[10px] font-bold font-mono tracking-wider text-zinc-400 uppercase">
+              <h4 className="text-[10px] font-bold font-mono tracking-wider text-zinc-400 dark:text-zinc-500 uppercase">
                 Key Highlights & Impact
               </h4>
               <ul className="space-y-3">
                 {project.highlights.map((h, i) => (
-                  <li key={i} className="flex items-start gap-3 text-sm text-zinc-600 font-medium leading-relaxed">
-                    <Sparkles size={16} className="text-zinc-400 mt-0.5 flex-shrink-0" />
+                  <li key={i} className="flex items-start gap-3 text-sm text-zinc-650 dark:text-zinc-300 font-medium leading-relaxed">
+                    <Sparkles size={16} className="text-zinc-400 dark:text-zinc-500 mt-0.5 flex-shrink-0" />
                     <span>{h}</span>
                   </li>
                 ))}
@@ -88,15 +88,15 @@ export default function ProjectPage(props: ProjectPageProps) {
           {/* Sidebar Cards (Right Column) */}
           <div className="lg:col-span-4 space-y-6">
             {/* Tech Stack Card */}
-            <div className="border border-zinc-200/50 bg-white rounded-[24px] p-6 shadow-sm space-y-4">
-              <h4 className="text-[10px] font-bold font-mono tracking-wider text-zinc-400 uppercase">
+            <div className="border border-zinc-200/50 dark:border-zinc-800/40 bg-white dark:bg-zinc-900/60 rounded-[24px] p-6 shadow-sm space-y-4">
+              <h4 className="text-[10px] font-bold font-mono tracking-wider text-zinc-400 dark:text-zinc-500 uppercase">
                 Technologies Used
               </h4>
               <div className="flex flex-wrap gap-2">
                 {project.tech.map((t) => (
                   <span
                     key={t}
-                    className="px-2.5 py-1 rounded-full border border-zinc-200/40 bg-zinc-50/20 text-[10px] font-semibold text-zinc-500 shadow-sm"
+                    className="px-2.5 py-1 rounded-full border border-zinc-200/40 dark:border-zinc-800/40 bg-zinc-50/20 dark:bg-zinc-800/10 text-[10px] font-semibold text-zinc-600 dark:text-zinc-300 shadow-sm"
                   >
                     {t}
                   </span>
@@ -105,12 +105,23 @@ export default function ProjectPage(props: ProjectPageProps) {
             </div>
 
             {/* Action Links Card */}
-            <div className="border border-zinc-200/50 bg-white rounded-[24px] p-6 shadow-sm">
+            <div className="border border-zinc-200/50 dark:border-zinc-800/40 bg-white dark:bg-zinc-900/60 rounded-[24px] p-6 shadow-sm space-y-3">
+              {project.liveLink && (
+                <a
+                  href={project.liveLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full inline-flex items-center justify-center px-4 py-3 rounded-full bg-zinc-950 dark:bg-white hover:bg-zinc-800 dark:hover:bg-zinc-200 text-white dark:text-zinc-950 font-bold text-xs gap-1.5 transition-colors cursor-pointer shadow-sm"
+                >
+                  <ExternalLink size={14} />
+                  <span>Visit Live Website</span>
+                </a>
+              )}
               <a
                 href={project.gitLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full inline-flex items-center justify-center px-4 py-3 rounded-full border border-zinc-200 hover:border-zinc-300 text-zinc-600 hover:text-zinc-950 font-bold text-xs gap-1.5 transition-colors cursor-pointer"
+                className="w-full inline-flex items-center justify-center px-4 py-3 rounded-full border border-zinc-200 dark:border-zinc-800 hover:border-zinc-300 dark:hover:border-zinc-700 text-zinc-600 dark:text-zinc-300 hover:text-zinc-950 dark:hover:text-zinc-50 font-bold text-xs gap-1.5 transition-colors cursor-pointer"
               >
                 <Github size={14} />
                 <span>Source Repository</span>
