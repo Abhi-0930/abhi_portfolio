@@ -12,18 +12,46 @@ interface TimelineEvent {
 
 const experiences: TimelineEvent[] = [
   {
-    role: "Founder & Full-Stack Engineer",
-    company: "CodeLoom",
-    period: "JUN 2026 — PRESENT",
-    description: "Building web, mobile, AI, and automation solutions for startups and businesses, leading end-to-end product development from requirements and system architecture to deployment and maintenance.",
-    pills: ["Next.js", "Node.js", "PostgreSQL", "Docker", "Kubernetes", "AWS", "System Design"],
+    role: "Founder",
+    company: "Preppath · Remote",
+    period: "SEP 2026 — PRESENT",
+    description: "Building an engineering learning platform helping students develop practical skills and industry-ready expertise through structured project-based curriculums, technical mentorship, hands-on workshops, and collaborative community initiatives.",
+    pills: ["EdTech", "System Architecture", "Curriculum Design", "Mentorship", "Community Building"],
   },
   {
-    role: "Open Source Contributor & Project Mentor",
-    company: "GirlScript Summer of Code (GSSoC)",
-    period: "MAY 2022 — FEB 2024",
-    description: "Contributed to open-source projects spanning cybersecurity, AI, e-commerce, and food delivery domains while collaborating with distributed engineering teams and shipping production-ready features.",
-    pills: ["Open Source", "Full-Stack Development", "System Design", "Cybersecurity", "REST APIs", "Git"],
+    role: "Founder & Principal Engineer",
+    company: "CodeLoom · Hybrid (Hyderabad, India)",
+    period: "FEB 2024 — PRESENT",
+    description: "Leading end-to-end product development for startups and businesses from concept to production. Architecting scalable, secure web, mobile, and automation solutions with a relentless focus on performance, reliability, and system design.",
+    pills: ["Next.js", "Node.js", "PostgreSQL", "System Architecture", "DevSecOps", "AWS", "Automation", "Code Review"],
+  },
+  {
+    role: "Technical Trainer & Mentor",
+    company: "Freelance · Remote",
+    period: "FEB 2023 — PRESENT",
+    description: "Trained and mentored 5,000+ students and aspiring engineers across the US, UK, India, and Europe through intensive workshops and bootcamps in Data Structures & Algorithms, Full-Stack Development, DBMS, and System Design.",
+    pills: ["Data Structures & Algorithms", "System Design", "MERN Stack", "DBMS", "Technical Interview Prep", "Mentoring"],
+  },
+  {
+    role: "Project Mentor & Open Source Contributor",
+    company: "GirlScript Summer of Code (GSSoC) · Remote",
+    period: "JUN 2022 — MAR 2023",
+    description: "Mentored contributors on Git workflows, pull requests, and software engineering best practices. Actively contributed to open-source codebases spanning web development, cybersecurity, AI, and RESTful APIs with distributed teams.",
+    pills: ["Open Source", "Code Review", "Git & GitHub", "REST APIs", "Cybersecurity", "Mentorship"],
+  },
+  {
+    role: "Design Team Lead",
+    company: "Coding Cubs · On-site",
+    period: "AUG 2020 — JAN 2022",
+    description: "Promoted from Team Member to Team Lead. Directed cross-functional workflows, coordinated multidisciplinary project deliverables, and mentored members to deliver polished technical and creative solutions.",
+    pills: ["Team Leadership", "UI/UX Design", "Project Management", "Mentorship", "Workflow Optimization"],
+  },
+  {
+    role: "Web Developer Intern",
+    company: "Prodigy InfoTech · Remote",
+    period: "SEP 2021 — OCT 2021",
+    description: "Engineered responsive, accessible web interfaces and reusable UI components following industry-standard frontend practices, optimizing cross-device compatibility and page load performance.",
+    pills: ["Frontend Development", "JavaScript", "Responsive Design", "HTML5 & CSS3", "Component Design"],
   },
 ];
 
@@ -85,7 +113,7 @@ export default function Experience() {
                       </p>
                       
                       {/* Tech Stack Badges */}
-                      <div className="mt-5 flex flex-wrap gap-2">
+                      <div className={`mt-5 flex flex-wrap gap-2 ${isLeft ? "md:justify-end" : "justify-start"}`}>
                         {exp.pills.map((pill) => (
                           <span
                             key={pill}
