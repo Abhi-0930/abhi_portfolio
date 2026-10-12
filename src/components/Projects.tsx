@@ -2,7 +2,6 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import { motion } from "framer-motion";
 import { Github, ArrowRight } from "lucide-react";
 import { projects } from "@/data/projects";
 
@@ -51,12 +50,8 @@ export default function Projects() {
           {projects.map((project, idx) => {
             const isExpanded = !!expandedProjects[project.id];
             return (
-              <motion.div
+              <div
                 key={project.title}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-100px" }}
-                transition={{ duration: 0.5, delay: idx * 0.15 }}
                 className="group relative flex flex-col justify-between rounded-[24px] border border-zinc-200/50 bg-white shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden"
               >
                 {/* Wrap top/body clickable area in Link */}
@@ -140,7 +135,7 @@ export default function Projects() {
                     <span>Source Code</span>
                   </a>
                 </div>
-              </motion.div>
+              </div>
             );
           })}
         </div>
