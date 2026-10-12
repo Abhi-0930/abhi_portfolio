@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import { motion } from "framer-motion";
 
 interface TimelineEvent {
   role: string;
@@ -67,11 +66,7 @@ export default function Experience() {
 
                   {/* Content Box */}
                   <div className="w-full md:w-[calc(50%-3rem)] pl-12 md:pl-0">
-                    <motion.div
-                      initial={{ opacity: 0, y: 15 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      viewport={{ once: true, margin: "-100px" }}
-                      transition={{ duration: 0.5, delay: idx * 0.05 }}
+                    <div
                       className={`flex flex-col ${
                         isLeft ? "md:items-end md:text-right" : "items-start text-left"
                       }`}
@@ -100,7 +95,7 @@ export default function Experience() {
                           </span>
                         ))}
                       </div>
-                    </motion.div>
+                    </div>
                   </div>
                 </div>
               );
