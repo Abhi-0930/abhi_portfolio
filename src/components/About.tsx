@@ -14,12 +14,15 @@ export default function About() {
               01 — ABOUT
             </span>
             <h2 className="text-3xl md:text-[40px] font-extrabold tracking-tight text-zinc-900 dark:text-zinc-50 leading-[1.2]">
-              Building technology that solves real-world problems.
+              Engineering resilient systems and startup products that solve real-world problems.
             </h2>
           </div>
-          <div className="lg:col-span-6 flex items-end">
+          <div className="lg:col-span-6 flex flex-col justify-end space-y-4">
             <p className="text-sm md:text-[15px] leading-[1.8] text-zinc-500 dark:text-zinc-400 font-medium">
-              I work across software engineering, cybersecurity, and product development, focusing on building secure, scalable, and maintainable systems. From mentoring 5,000+ students through online and offline programs to developing AI-powered applications and business solutions, I enjoy creating products that deliver <span className="font-semibold text-zinc-950 dark:text-zinc-50">measurable impact</span> and long-term value.
+              I operate at the intersection of full-stack system architecture, cybersecurity, applied AI, and startup execution. Whether I am designing high-level and low-level (HLD/LLD) distributed architectures, hardening cloud-native DevSecOps pipelines, or shipping AI-powered web and mobile products from 0 to 1, my focus is always on turning real-world bottlenecks into scalable, maintainable businesses.
+            </p>
+            <p className="text-sm md:text-[15px] leading-[1.8] text-zinc-500 dark:text-zinc-400 font-medium">
+              Beyond engineering production systems, I work extensively as a Technical Trainer—having mentored 5,000+ students across the US, UK, India, Netherlands, Italy, and Germany through online and offline programs in Full-Stack Development, DSA, DBMS, and System Design.
             </p>
           </div>
         </div>
