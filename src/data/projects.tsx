@@ -162,8 +162,8 @@ export const projects: Project[] = [
       "System Design",
       "HLD/LLD"
     ],
-    liveLink: "https://demo.codeloom.in/arihs-tour",
-    gitLink: "https://github.com/Abhi-0930/arihs-tour.git",
+    liveLink: "https://www.travel.arihstour.com",
+    gitLink: "https://github.com/Abhi-0930/arihstour.git",
     category: "TravelTech • Metasearch Aggregator • Real-Time Systems",
     highlights: [
       "Engineered a unified travel metasearch engine integrating Skyscanner, Booking.com, and MakeMyTrip.",
