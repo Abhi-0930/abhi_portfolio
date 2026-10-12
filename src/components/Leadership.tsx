@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState, useRef } from "react";
 import { useInView } from "framer-motion";
-import { Users, Tv, Award, Lightbulb } from "lucide-react";
+import { Users, Globe, Building2, Rocket } from "lucide-react";
 
 interface CounterProps {
   value: string;
@@ -15,6 +15,11 @@ function Counter({ value }: CounterProps) {
 
   useEffect(() => {
     if (!isInView) return;
+
+    if (value.includes("→")) {
+      setDisplayValue(value);
+      return;
+    }
 
     // Extract numbers and non-numeric suffixes (e.g. "5,000+" -> number: 5000, suffix: "+")
     const cleaned = value.replace(/,/g, "");
@@ -63,23 +68,23 @@ export default function Leadership() {
   const stats = [
     {
       stat: "5,000+",
-      label: "Engineers trained & mentored",
+      label: "Engineers & students mentored globally",
       icon: Users,
     },
     {
-      stat: "10+",
-      label: "Engineering institutions",
-      icon: Tv,
+      stat: "6+ Countries",
+      label: "Global training footprint (US, UK, EU, IN)",
+      icon: Globe,
     },
     {
-      stat: "Multi",
-      label: "Hackathons & innovation runs",
-      icon: Award,
+      stat: "10+ Institutions",
+      label: "University bootcamps & corporate workshops",
+      icon: Building2,
     },
     {
-      stat: "MVPs",
-      label: "Built for early-stage startups",
-      icon: Lightbulb,
+      stat: "0 → 1 MVPs",
+      label: "Architected for early-stage startups",
+      icon: Rocket,
     },
   ];
 
@@ -98,14 +103,14 @@ export default function Leadership() {
           </div>
           <div className="lg:col-span-6 flex items-end">
             <p className="text-sm md:text-[15px] leading-[1.8] text-zinc-500 dark:text-zinc-400 font-medium">
-              Beyond shipping code, I invest in the next wave of engineers — through workshops, mentorship, and community-led learning.
+              Beyond architecting production systems, I invest in the next wave of engineers — through global technical training, open-source mentorship, and startup venture building.
             </p>
           </div>
         </div>
 
         {/* Stats Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-          {stats.map((item, idx) => {
+          {stats.map((item) => {
             const Icon = item.icon;
             return (
               <div
@@ -118,7 +123,7 @@ export default function Leadership() {
                 </div>
 
                 <div>
-                  <div className="text-2xl md:text-3xl font-extrabold text-zinc-950 dark:text-zinc-50 leading-none">
+                  <div className="text-xl md:text-2xl lg:text-[26px] font-extrabold text-zinc-950 dark:text-zinc-50 leading-none tracking-tight">
                     <Counter value={item.stat} />
                   </div>
                   <div className="text-[11px] font-semibold text-zinc-450 dark:text-zinc-400 mt-2 block">
@@ -138,21 +143,21 @@ export default function Leadership() {
             <div className="space-y-4">
               <div className="flex items-start gap-2.5">
                 <span className="text-zinc-400 dark:text-zinc-550 font-mono select-none mt-0.5">•</span>
-                <span>Trained and mentored 5,000+ students through online and offline technical programs.</span>
+                <span>Trained and mentored 5,000+ students globally across the US, UK, India, Netherlands, Italy, and Germany through intensive online and offline programs in DSA, Full-Stack Engineering, DBMS, and System Design.</span>
               </div>
               <div className="flex items-start gap-2.5">
                 <span className="text-zinc-400 dark:text-zinc-550 font-mono select-none mt-0.5">•</span>
-                <span>Participated in hackathons and innovation programs — shipping under pressure.</span>
+                <span>Delivered hands-on bootcamps and technical workshops across 10+ engineering institutions, bridging academic computer science with production-grade architecture, testing, and observability.</span>
               </div>
             </div>
             <div className="space-y-4">
               <div className="flex items-start gap-2.5">
                 <span className="text-zinc-400 dark:text-zinc-550 font-mono select-none mt-0.5">•</span>
-                <span>Conducted workshops across 10+ engineering institutions across India.</span>
+                <span>Authored structured engineering roadmaps and technical handbooks (including the React Handbook Volume 2 and DSA Master Roadmap) and mentored contributors in national open-source initiatives and hackathons.</span>
               </div>
               <div className="flex items-start gap-2.5">
                 <span className="text-zinc-400 dark:text-zinc-550 font-mono select-none mt-0.5">•</span>
-                <span>Worked with startups on MVP development, technical consulting, and product engineering.</span>
+                <span>Partnered with early-stage startups on 0-to-1 MVP architecture, technical consulting, DevSecOps hardening, and end-to-end product engineering through CodeLoom.</span>
               </div>
             </div>
           </div>
