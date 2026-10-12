@@ -78,9 +78,16 @@ export default function Projects() {
                     <div>
                       <div className="flex justify-between items-start">
                         <div>
-                          <h3 className="text-xl font-bold text-zinc-900 dark:text-zinc-50 leading-none">
-                            {project.title}
-                          </h3>
+                          <div className="flex items-center gap-2.5 flex-wrap">
+                            <h3 className="text-xl font-bold text-zinc-900 dark:text-zinc-50 leading-none">
+                              {project.title}
+                            </h3>
+                            {project.date && (
+                              <span className="text-[10px] font-mono font-medium px-2 py-0.5 rounded-full border border-zinc-200/50 dark:border-zinc-800/50 bg-zinc-50/50 dark:bg-zinc-850/40 text-zinc-500 dark:text-zinc-400">
+                                {project.date}
+                              </span>
+                            )}
+                          </div>
                           <span className="text-xs font-serif italic text-zinc-400 dark:text-zinc-500 mt-2 block">
                             {project.subtitle}
                           </span>
