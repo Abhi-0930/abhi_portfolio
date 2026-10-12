@@ -217,22 +217,22 @@ export const projects: Project[] = [
       "Flask",
       "LangChain",
       "MongoDB",
-      "DeepFace",
-      "DistilBERT",
+      "Express.js",
       "PyDub",
-      "Docker",
+      "OpenCV",
+      "Wikipedia API",
+      "Geolocation API",
       "JWT",
-      "Prometheus",
-      "Grafana"
+      "System Design"
     ],
     liveLink: "https://demo.codeloom.in/empathy-ai",
     gitLink: "https://github.com/Abhi-0930/empathy-ai.git",
     category: "AI • Healthcare • Multimodal Systems",
     highlights: [
-      "Integrated multimodal emotion detection across text, voice, and facial expression inputs.",
-      "Engineered LangChain agent pipelines with PyDub audio analysis and real-time video processing.",
-      "Built geolocation hospital discovery with one-click direct emergency calling.",
-      "Reduced application response latency by 35% through custom caching configurations."
+      "Engineered a 3-mode multimodal ingestion pipeline analyzing live text sentiment, PyDub audio transcriptions, and continuous 2-second interval video frames.",
+      "Orchestrated LangChain workflows querying Wikipedia and clinical reference reports to deliver context-aware behavioral therapies and preliminary medication guidance.",
+      "Built an automated criticality classification engine that detects severe distress and maps nearest specialized hospitals and psychiatrists with direct one-click calling.",
+      "Developed an interactive mind-relaxation and cognitive exercise module with real-time tracking to verify user exercise completion and accuracy."
     ],
     illustration: (
       <div className="absolute inset-0 bg-gradient-to-b from-[#2A5298] to-[#1E3C72] overflow-hidden flex items-center justify-center">
