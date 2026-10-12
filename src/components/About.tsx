@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import { motion } from "framer-motion";
 import { Cpu, ShieldCheck, Cloud, Network, GitBranch, Rocket, ArrowRight } from "lucide-react";
 
 export default function About() {
@@ -30,11 +29,7 @@ export default function About() {
           {/* Row 1: Full-Stack (7/12) + Cyber & Cloud (5/12) */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
             {/* Full-Stack Card */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.5 }}
+            <div
               className="lg:col-span-7 relative rounded-[24px] border border-blue-100/50 dark:border-blue-950/40 bg-gradient-to-br from-blue-50/30 via-white to-white dark:from-blue-950/10 dark:via-zinc-900 dark:to-zinc-900 p-8 shadow-sm flex flex-col justify-between transition-all duration-300 hover:shadow-md hover:-translate-y-1 hover:border-blue-200/60 dark:hover:border-blue-800/40"
             >
               <div>
@@ -48,16 +43,12 @@ export default function About() {
                   Building production-grade web and mobile applications using React, Next.js, Node.js, and modern development practices with a strong emphasis on performance, accessibility, and maintainability.
                 </p>
               </div>
-            </motion.div>
+            </div>
 
             {/* Cyber & Cloud Stacked Column */}
             <div className="lg:col-span-5 flex flex-col gap-6">
               {/* Cybersecurity Card */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-100px" }}
-                transition={{ duration: 0.5, delay: 0.1 }}
+              <div
                 className="relative rounded-[24px] border border-rose-100/50 dark:border-rose-950/40 bg-gradient-to-br from-rose-50/30 via-white to-white dark:from-rose-950/10 dark:via-zinc-900 dark:to-zinc-900 p-8 shadow-sm flex flex-col justify-between transition-all duration-300 hover:shadow-md hover:-translate-y-1 hover:border-rose-200/60 dark:hover:border-rose-800/40"
               >
                 <div>
@@ -71,14 +62,10 @@ export default function About() {
                     Applying secure software development principles, vulnerability assessment, and web application security practices to build products that are reliable, resilient, and secure by design.
                   </p>
                 </div>
-              </motion.div>
+              </div>
 
               {/* Cloud & DevOps Card */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-100px" }}
-                transition={{ duration: 0.5, delay: 0.2 }}
+              <div
                 className="relative rounded-[24px] border border-amber-100/50 dark:border-amber-950/40 bg-gradient-to-br from-amber-50/30 via-white to-white dark:from-amber-950/10 dark:via-zinc-900 dark:to-zinc-900 p-8 shadow-sm flex flex-col justify-between transition-all duration-300 hover:shadow-md hover:-translate-y-1 hover:border-amber-200/60 dark:hover:border-amber-800/40"
               >
                 <div>
@@ -92,18 +79,14 @@ export default function About() {
                     Deploying and managing cloud-native infrastructure using AWS, Docker, Kubernetes, and modern DevOps workflows to deliver scalable, observable, and highly available systems.
                   </p>
                 </div>
-              </motion.div>
+              </div>
             </div>
           </div>
 
           {/* Row 2: System Design (6/12) + Open Source (6/12) */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
             {/* System Design Card */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.5 }}
+            <div
               className="lg:col-span-6 relative rounded-[24px] border border-emerald-100/50 dark:border-emerald-950/40 bg-gradient-to-br from-emerald-50/30 via-white to-white dark:from-emerald-950/10 dark:via-zinc-900 dark:to-zinc-900 p-8 shadow-sm flex flex-col justify-between transition-all duration-300 hover:shadow-md hover:-translate-y-1 hover:border-emerald-200/60 dark:hover:border-emerald-800/40"
             >
               <div>
@@ -117,14 +100,10 @@ export default function About() {
                   Designing scalable architectures using caching, asynchronous communication, distributed systems principles, and robust HLD/LLD practices for real-world applications.
                 </p>
               </div>
-            </motion.div>
+            </div>
 
             {/* Open Source Card */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.5, delay: 0.1 }}
+            <div
               className="lg:col-span-6 relative rounded-[24px] border border-indigo-100/50 dark:border-indigo-950/40 bg-gradient-to-br from-indigo-50/30 via-white to-white dark:from-indigo-950/10 dark:via-zinc-900 dark:to-zinc-900 p-8 shadow-sm flex flex-col justify-between transition-all duration-300 hover:shadow-md hover:-translate-y-1 hover:border-indigo-200/60 dark:hover:border-indigo-800/40"
             >
               <div>
@@ -138,15 +117,11 @@ export default function About() {
                   Contributing to open-source initiatives across AI, cybersecurity, e-commerce, and full-stack development through collaborative engineering and community-driven projects.
                 </p>
               </div>
-            </motion.div>
+            </div>
           </div>
 
           {/* Row 3: Entrepreneurship (Full-Width) */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.5 }}
+          <div
             className="w-full relative rounded-[24px] border border-purple-100/50 dark:border-purple-950/40 bg-gradient-to-br from-purple-50/30 via-white to-white dark:from-purple-950/10 dark:via-zinc-900 dark:to-zinc-900 p-8 shadow-sm flex flex-col justify-between transition-all duration-300 hover:shadow-md hover:-translate-y-1 hover:border-purple-200/60 dark:hover:border-purple-800/40"
           >
             <div>
@@ -160,7 +135,7 @@ export default function About() {
                 Founded CodeLoom to help startups and businesses transform ideas into scalable products through MVP development, technical consulting, and end-to-end software engineering.
               </p>
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>
