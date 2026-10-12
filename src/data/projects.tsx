@@ -144,7 +144,7 @@ export const projects: Project[] = [
   {
     id: "arihs-tour",
     title: "Arihs Tour",
-    image: "/malnadu_kitchen .png",
+    image: "/arihstour.png",
     subtitle: "Multi-Provider Travel Aggregation Engine",
     description: "A travel metasearch and aggregation platform engineered to unify real-time flight, hotel, and bus inventory across global providers like Skyscanner, Booking.com, and MakeMyTrip. The system features multi-provider API normalization, outbound affiliate conversion tracking, automated Razorpay payouts, and an administrative telemetry dashboard for user and booking metrics.",
     tech: [
