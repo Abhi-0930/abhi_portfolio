@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import { motion } from "framer-motion";
 
 interface TimelineEvent {
   role: string;
@@ -95,12 +96,24 @@ export default function Experience() {
                   } w-full`}
                 >
                   {/* Timeline node dot */}
-                  <div className="absolute left-4 md:left-1/2 top-1.5 md:top-1/2 -translate-x-1/2 md:-translate-y-1/2 z-10 flex h-7 w-7 items-center justify-center rounded-full border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 shadow-[0_4px_12px_rgba(0,0,0,0.03)]">
+                  <motion.div
+                    initial={{ scale: 0.6, opacity: 0.5 }}
+                    whileInView={{ scale: 1, opacity: 1 }}
+                    viewport={{ once: false, amount: 0.3 }}
+                    transition={{ duration: 0.4, ease: "easeOut" }}
+                    className="absolute left-4 md:left-1/2 top-1.5 md:top-1/2 -translate-x-1/2 md:-translate-y-1/2 z-10 flex h-7 w-7 items-center justify-center rounded-full border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 shadow-[0_4px_12px_rgba(0,0,0,0.03)]"
+                  >
                     <div className="h-2 w-2 rounded-full bg-zinc-950 dark:bg-white" />
-                  </div>
+                  </motion.div>
 
                   {/* Content Box */}
-                  <div className="w-full md:w-[calc(50%-3rem)] pl-12 md:pl-0">
+                  <motion.div
+                    initial={{ opacity: 0, x: isLeft ? -50 : 50 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: false, amount: 0.25 }}
+                    transition={{ duration: 0.65, ease: [0.22, 1, 0.36, 1] }}
+                    className="w-full md:w-[calc(50%-3rem)] pl-12 md:pl-0"
+                  >
                     <div
                       className={`flex flex-col ${
                         isLeft ? "md:items-end md:text-right" : "items-start text-left"
@@ -131,7 +144,7 @@ export default function Experience() {
                         ))}
                       </div>
                     </div>
-                  </div>
+                  </motion.div>
                 </div>
               );
             })}
