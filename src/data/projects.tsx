@@ -154,22 +154,22 @@ export const projects: Project[] = [
       "Express.js",
       "PostgreSQL",
       "Redis",
-      "Docker",
-      "AWS",
-      "Razorpay",
-      "TailwindCSS",
+      "MongoDB",
+      "Razorpay API",
       "REST APIs",
+      "API Aggregation",
+      "JWT",
       "System Design",
-      "HLD/LLD"
+      "HLD / LLD"
     ],
     liveLink: "https://www.travel.arihstour.com",
     gitLink: "https://github.com/Abhi-0930/arihstour.git",
     category: "TravelTech • Metasearch Aggregator • Real-Time Systems",
     highlights: [
-      "Engineered a unified travel metasearch engine integrating Skyscanner, Booking.com, and MakeMyTrip.",
-      "Normalized diverse multi-provider API response schemas into a high-performance unified data format.",
-      "Built outbound affiliate redirect tracking and automated payout settlement via Razorpay.",
-      "Developed an administrative telemetry dashboard for real-time booking trends and operational analytics."
+      "Integrated and normalized 7+ global travel partner APIs (Skyscanner, Booking.com, MakeMyTrip, Air India, AirAsia, Aviasales, and Trip.com) for real-time flight, hotel, and bus inventory search.",
+      "Engineered a dual-portal architecture featuring a low-latency User Search & Redirection Engine and a comprehensive Admin Operations Dashboard.",
+      "Built real-time conversion and Click-Through-Rate (CTR) attribution pipelines to track outbound partner bookings and calculate affiliate commission revenue.",
+      "Integrated Razorpay payment and payout workflows within the admin console to manage platform settlements, user registration metrics, and financial reporting."
     ],
     illustration: (
       <div className="absolute inset-0 bg-gradient-to-b from-[#232526] to-[#414345] overflow-hidden flex items-center justify-center">
