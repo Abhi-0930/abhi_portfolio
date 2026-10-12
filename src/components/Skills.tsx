@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import { motion } from "framer-motion";
 import {
   SiReact,
   SiNodedotjs,
@@ -389,12 +388,8 @@ export default function Skills() {
           {categories.map((cat, idx) => {
             const catSkills = skills.filter((s) => s.category === cat.id);
             return (
-              <motion.div
+              <div
                 key={cat.id}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-100px" }}
-                transition={{ duration: 0.4, delay: idx * 0.05 }}
                 className="relative rounded-[24px] border border-zinc-200/50 dark:border-zinc-800/40 bg-white dark:bg-zinc-900/60 p-6 shadow-sm flex flex-col justify-between transition-all duration-300 hover:shadow-md hover:-translate-y-0.5 hover:border-zinc-300 dark:hover:border-zinc-700"
               >
                 <div>
@@ -422,7 +417,7 @@ export default function Skills() {
                     })}
                   </div>
                 </div>
-              </motion.div>
+              </div>
             );
           })}
         </div>
