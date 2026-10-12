@@ -25,26 +25,26 @@ export const projects: Project[] = [
     tech: [
       "Next.js",
       "TypeScript",
+      "React.js",
       "Node.js",
+      "Express.js",
       "PostgreSQL",
+      "NeonDB",
       "Prisma",
       "Redis",
       "Docker",
-      "AWS",
-      "TailwindCSS",
-      "REST APIs",
+      "JWT",
       "System Design",
-      "HLD/LLD",
-      "Jest"
+      "HLD / LLD"
     ],
-    liveLink: "https://preppath.in",
-    gitLink: "https://github.com/Abhi-0930/preppath",
+    liveLink: "https://www.preppath.net",
+    gitLink: "https://github.com/Abhi-0930/preppath.git",
     category: "EdTech • Product Architecture • Full-Stack Development",
     highlights: [
-      "Engineered structured learning roadmaps across DSA, System Design, and Full-Stack tracks.",
-      "Developed project-based evaluation modules with automated code review pipelines.",
-      "Integrated interactive handbooks, mentorship scheduling, and real-world project sandboxes.",
-      "Built with modular Next.js architecture and Redis-backed session & caching layers."
+      "Architected 6+ structured engineering roadmaps covering DSA, Full-Stack Web, DBMS, and System Design (HLD/LLD).",
+      "Published comprehensive technical handbooks and interactive modules built from mentoring 5,000+ students globally.",
+      "Implemented role-based student and mentor dashboards with progress tracking, project submissions, and code review workflows.",
+      "Optimized content delivery and roadmap state management using Next.js SSR and Redis caching for low-latency performance."
     ],
     illustration: (
       <div className="absolute inset-0 bg-gradient-to-b from-[#6A11CB] to-[#2575FC] overflow-hidden flex items-center justify-center">
