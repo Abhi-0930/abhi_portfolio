@@ -100,14 +100,14 @@ export const projects: Project[] = [
       "HLD",
       "LLD"
     ],
-    liveLink: "https://demo.codeloom.in/crm",
+    liveLink: "https://codeloom.in",
     gitLink: "https://github.com/Abhi-0930/codeloom-crm.git",
     category: "SaaS • CRM • System Architecture",
     highlights: [
-      "Configured 10+ business modules including invoicing, tickets, and team rosters.",
-      "Implemented 3 separate role-based portals for clients, members, and administrators.",
-      "Developed and documented 35+ fully secure client management REST APIs.",
-      "Automated 25+ system and mail workflows via background queue pipelines."
+      "Architected 10+ modular business domains covering client onboarding, invoicing, support tickets, and team rosters.",
+      "Implemented 3 isolated role-based portals (Client, Team Member, and Admin) secured via granular JWT authentication.",
+      "Designed, documented, and hardened 35+ production REST APIs backed by PostgreSQL and MongoDB persistence.",
+      "Automated 25+ system, billing, and email notification workflows using Redis-backed asynchronous job queues."
     ],
     illustration: (
       <div className="absolute inset-0 bg-gradient-to-b from-[#0F2027] via-[#203A43] to-[#2C5364] overflow-hidden flex items-center justify-center">
