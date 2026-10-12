@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useState, useRef } from "react";
-import { motion, useInView } from "framer-motion";
+import { useInView } from "framer-motion";
 import { Users, Tv, Award, Lightbulb } from "lucide-react";
 
 interface CounterProps {
@@ -108,12 +108,8 @@ export default function Leadership() {
           {stats.map((item, idx) => {
             const Icon = item.icon;
             return (
-              <motion.div
+              <div
                 key={item.label}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-100px" }}
-                transition={{ duration: 0.4, delay: idx * 0.05 }}
                 className="group rounded-[24px] border border-zinc-200/50 dark:border-zinc-800/40 bg-white dark:bg-zinc-900/60 p-6 md:p-8 shadow-sm flex flex-col justify-between items-start h-44 hover:shadow-md hover:border-zinc-300 dark:hover:border-zinc-700 transition-all duration-300"
               >
                 {/* Icon wrapper badge */}
@@ -129,17 +125,13 @@ export default function Leadership() {
                     {item.label}
                   </div>
                 </div>
-              </motion.div>
+              </div>
             );
           })}
         </div>
 
         {/* Bullets Detail Box */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.5, delay: 0.2 }}
+        <div
           className="w-full border border-zinc-200/50 dark:border-zinc-800/40 bg-white dark:bg-zinc-900/60 rounded-[24px] p-6 md:p-8 shadow-sm"
         >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-4 text-xs md:text-[13px] leading-[1.8] text-zinc-500 dark:text-zinc-400 font-medium">
@@ -164,7 +156,7 @@ export default function Leadership() {
               </div>
             </div>
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );
