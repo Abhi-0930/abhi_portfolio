@@ -5,6 +5,7 @@ export interface Project {
   id: string;
   title: string;
   subtitle: string;
+  date?: string;
   description: string;
   tech: string[];
   liveLink: string;
@@ -21,6 +22,7 @@ export const projects: Project[] = [
     title: "PrepPath",
     image: "/mock_interview .png",
     subtitle: "Engineering Readiness & Learning Platform",
+    date: "Aug – Sep 2026",
     description: "A comprehensive technical education and career-readiness platform built to help students bridge the gap between academic theory and industry-grade software engineering. The system features structured learning roadmaps across DSA, Full-Stack Development, and System Design, alongside hands-on project tracks, technical handbooks, and mentorship workflows.",
     tech: [
       "Next.js",
@@ -82,6 +84,7 @@ export const projects: Project[] = [
     title: "CodeLoom CRM",
     image: "/codeloom_crm.png",
     subtitle: "Business Operations & Client Management",
+    date: "Feb – Apr 2025",
     description: "A centralized business management and CRM platform designed for agencies and service-based organizations to streamline client management, project tracking, invoicing, support ticketing, and team collaboration. Engineered with 3 role-based portals, 35+ secure REST APIs, and Redis-backed background queues for workflow automation, scalability, and observability.",
     tech: [
       "Next.js",
@@ -146,6 +149,7 @@ export const projects: Project[] = [
     title: "Arihs Tour",
     image: "/arihstour.png",
     subtitle: "Multi-Provider Travel Aggregation Engine",
+    date: "Aug – Oct 2024",
     description: "A travel metasearch and aggregation platform engineered to unify real-time flight, hotel, and bus inventory across global providers like Skyscanner, Booking.com, and MakeMyTrip. The system features multi-provider API normalization, outbound affiliate conversion tracking, automated Razorpay payouts, and an administrative telemetry dashboard for user and booking metrics.",
     tech: [
       "Next.js",
@@ -209,6 +213,7 @@ export const projects: Project[] = [
     title: "Empathy AI",
     image: "/empathy_ai.png",
     subtitle: "Multimodal Mental Health Assistant",
+    date: "Aug – Sep 2025",
     description: "An AI-powered multimodal mental health platform that analyzes text, voice (via PyDub), and live video frames (captured every 2 seconds) through LangChain to detect user sentiment and emotional criticality. Delivers personalized coping therapies, Wikipedia and clinical report insights, tracked mind-relaxation exercises, and geolocation-based hospital discovery with direct one-click calling.",
     tech: [
       "React.js",
