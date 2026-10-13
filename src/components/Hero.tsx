@@ -81,7 +81,8 @@ export default function Hero() {
             </Link>
             
             <a
-              href="/resume.pdf"
+              href="/Abhishek-Resume.pdf"
+              download="Abhishek-Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex h-11 items-center justify-center gap-2 rounded-full border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 px-6 text-xs font-bold text-zinc-700 dark:text-zinc-300 hover:bg-zinc-50 dark:hover:bg-zinc-800 transition-colors shadow-[0_2px_8px_rgba(0,0,0,0.02)] cursor-pointer"
