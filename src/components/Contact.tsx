@@ -126,10 +126,11 @@ export default function Contact() {
             {/* Resume Button */}
             <div>
               <a
-                href="/resume.pdf"
+                href="/Abhishek-Resume.pdf"
+                download="Abhishek-Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-zinc-950 hover:bg-zinc-800 text-white font-bold text-xs px-6 py-3 rounded-full shadow-sm transition-colors cursor-pointer"
+                className="inline-flex items-center gap-2 bg-zinc-950 dark:bg-white hover:bg-zinc-800 dark:hover:bg-zinc-200 text-white dark:text-zinc-950 font-bold text-xs px-6 py-3 rounded-full shadow-sm transition-colors cursor-pointer"
               >
                 <Download size={13} />
                 <span>Download Resume</span>
