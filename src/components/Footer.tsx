@@ -56,7 +56,7 @@ export default function Footer() {
 
         {/* Bottom Footer Row */}
         <div className="flex items-center justify-between pt-8">
-          <p className="text-[11px] font-normal text-zinc-400 dark:text-zinc-500 tracking-tight">
+          <p className="text-[13px] md:text-sm font-normal text-zinc-400 dark:text-zinc-500 tracking-tight">
             © {currentYear} Abhishek Jujjuvarapu. Crafted with care.
           </p>
         </div>
