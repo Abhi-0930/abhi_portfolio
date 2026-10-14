@@ -122,7 +122,6 @@ export default function Contact() {
                 <ArrowUpRight size={14} className="text-zinc-400 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
               </a>
             </div>
-            
             {/* Resume Button */}
             <div>
               <a
